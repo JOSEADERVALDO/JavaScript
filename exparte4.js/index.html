@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciando contagem</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    background-color: rgb(70,142, 236);
+    font:normal 15pt arial; 
+}
+header {
+    text-align: center;
+    color: white;
+}
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+
+}
+footer {
+    text-align: center;
+    color: white;
+    font: italic;
+}
+    </style>
 </head>
 <body>
     <header>
@@ -16,7 +40,7 @@
         <p>Início:  <input type="number" name="início" id="txti"></p>
         <p>Fim: <input type="number" name="fim" id="txtf"></p>
         <p>Passo: <input type="number" name="passo" id="txtp"></p>
-        <p> <input type="button" value="contar" onclick="contar()"></p>
+        <p><input type="button" value="contar" onclick="contar()"></p>
         </div>
         <div id="res">
         Preparando contagem...

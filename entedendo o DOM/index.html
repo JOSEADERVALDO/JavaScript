@@ -10,26 +10,31 @@
             background-color: rgba(0, 0, 0, 0.864);
             color: blanchedalmond;
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
         }
     </style>
     
 </head>
 <body>
    <h1>Iniciando Estudos em Dom</h1>
+   <h1>oi</h1>
    <p>Aqui vai o Resultado</p>
    <p>Aprendendo usar o <strong>Dom</strong> em JavaScript</p>
-   <div class="msg">Clique em mim</div>
+     <div class="msg">Clique em mim</div>
    <script>
        
-       var corpo = window.document.body
+       
+
       var p1 = window.document.getElementsByTagName("p")[1]
-      window.document.write("Está escrito assim:" + p1.innerText)
+      window.document.write("Está escrito assim:    " + p1.innerHTML)
      p1.style.color = 'orange'
    //  corpo.style.background =  'black'
      //  p1.style.color = 'orange'
    //  document.write(p1.innerHTML)
-    var d = window.document.querySelector("div.msg")
-  d.style.color = 'green'
+    var d = window.document.querySelector(".msg")
+          d.style.color = 'green'
+       // d.style.background = 'red'
+       
      
    </script>
     

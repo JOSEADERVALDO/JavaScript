@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treino</title>
+    <style>
+        div#box {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            background-color: rgb(65, 139, 65);
+            color: rgb(107, 4, 4);
+            width: 300px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onclick="aperte()" onmouseenter="entrei()" onmouseout="tofora()">
+        executar...
+     </div>
+     <script>
+         var b = window.document.getElementById('box')
+         b.addEventListener('click', aperte)
+         b.addEventListener('onmouseenter', entrei)
+         b.addEventListener('onmouseout', tofora)
+         function aperte(){
+             b.style.background = 'black'
+             b.innerText = 'Apertou!'
+         }
+         function entrei(){
+             b.innerText = 'Entrei'
+             b.style.background = 'pink'
+         }
+         function tofora(){
+             b.innerText = 'Tofora'
+             b.style.background = 'green'
+         }
+     </script>
+</body>
+</html>

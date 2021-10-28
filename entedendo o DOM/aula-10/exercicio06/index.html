@@ -11,22 +11,21 @@
             font-size: 18px;
             background-color: green;
             color: white;
-            width: 200px;
+            width: 300px;
             height: 200px;
             line-height: 200px;
-            text-align: center;
+            margin: auto;
         }
     </style>
 </head>
 <body>
-    <div id ='area'  onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
+    <div id ='area' onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         iteraja...
     </div>
     <script>
         var a = window.document.getElementById('area')
        a.addEventListener('click', clicar)
-        
-      a.addEventListener('moussenter', entrar)
+       a.addEventListener('moussenter', entrar)
        a.addEventListener('mouseout', saiu )
         
         function clicar() {

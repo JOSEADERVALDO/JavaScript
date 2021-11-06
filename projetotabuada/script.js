@@ -1,18 +1,12 @@
-function gerar(){
-    let num = document.getElementById('num');
-    let tab = document.getElementById('tab');
-    if(num.value.length == 0){
-        alert('ERROR DIGITE UM NÚMERO');
-    } else {
-        let n = Number(num.value);
-        let c = 1;
 
-        while (c <= 10) {
-            let option = document.createElement(option);
-            option.text = `${c} x ${n} = ${c*n}`;
-            option.value = `tab ${c}`;
-            tab.appendChild(option);
-            c++
-        }
+function tabuada() {
+    let saida = document.getElementById('saida')
+    let n = Number(document.getElementById('fnum').value)
+
+    saida.innerHTML = `<h2>Tabuada de ${n}</h2>`
+    let c = 1
+    while (c <= 10) {
+        saida.innerHTML += `${n} x ${c} = <strong>${n * c}</strong><br>`
+        c ++
     }
 }

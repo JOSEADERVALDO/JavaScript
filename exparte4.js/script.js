@@ -8,9 +8,9 @@ function contar(){
         window.alert('[erro] Faltam dados!')
     } else {
         res.innerHTML = 'contando'
-        let i = Namber(ini.value)
-        let f = Namber(fim.value)
-        let p = Namber(passo.value)
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
 
         for(let c = i; c <= f; c <= p) {
             res.innerHTML += `$(c) \ u(1f449)` 
